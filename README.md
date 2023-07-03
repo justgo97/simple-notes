@@ -10,6 +10,6 @@
 
 ### Todo
 
-- [] Polish the interface
-- [] Make it responsive
-- [] Allow export/import of notes
+- [ ] Polish the interface
+- [ ] Make it responsive
+- [ ] Allow export/import of notes
