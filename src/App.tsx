@@ -90,9 +90,11 @@ const AppSide = ({ currentNoteID, handleCurrentNote }: AppSide) => {
   };
 
   const onClickCreate = () => {
+    const notesCount = localStorage.getItem("notesCount") || "2";
+
     const newNote: INote = {
       id: Date.now().toString(),
-      title: `New Note (${Object.keys(notesList).length + 1})`,
+      title: `New Note (${notesCount})`,
       content: "New Note",
     };
 

@@ -17,6 +17,12 @@ const db = new simpleNotesDatabase();
 
 export const dbFuncs = {
   createNote: (data: INote) => {
+    const oldCount = localStorage.getItem("notesCount");
+
+    const newCount = oldCount ? (Number(oldCount) + 1).toString() : "2";
+
+    localStorage.setItem("notesCount", newCount);
+
     return db.notes.add(data);
   },
   saveNote: (data: INote) => {
