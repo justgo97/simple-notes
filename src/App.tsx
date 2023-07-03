@@ -100,8 +100,6 @@ const AppSide = ({ currentNoteID, handleCurrentNote }: AppSide) => {
   };
 
   const onClickDelete = (noteID: string) => {
-    dbFuncs.deleteNote(noteID);
-
     if (currentNoteID === noteID) {
       handleCurrentNote("");
     }

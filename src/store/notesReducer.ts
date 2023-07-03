@@ -17,6 +17,7 @@ export const notesSlice = createSlice({
     deleteNote: (state, action: PayloadAction<string>) => {
       const noteID = action.payload;
       delete state[noteID];
+      dbFuncs.deleteNote(noteID);
     },
     changeNote: (state, action: PayloadAction<INote>) => {
       const { id, title, content } = action.payload;
