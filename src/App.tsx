@@ -29,16 +29,13 @@ function App() {
 
       if (userNotes.length < 1) {
         const defaultNote: INote = {
-          id: "1",
+          id: Date.now().toString(),
           title: "New Note",
           content: "New Note",
-          date_created: Date.now(),
-          date_modified: Date.now(),
         };
 
-        dispatch(notesActions.notesLoaded({ "1": defaultNote }));
-        setCurrentNoteID("1");
-        dbFuncs.createNote(defaultNote);
+        dispatch(notesActions.createNote(defaultNote));
+        setCurrentNoteID(defaultNote.id);
       } else {
         const initialNotes: NotesList = {};
         userNotes.forEach((note) => (initialNotes[note.id] = note));
