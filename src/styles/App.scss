@@ -1,0 +1,76 @@
+.app {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 100%;
+
+  &-side {
+    padding: 1rem;
+    min-height: 94vh;
+    min-width: 25%;
+    width: 25%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.25rem;
+    flex-grow: 1;
+
+    &-title {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &-item {
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      display: flex;
+
+      &-selected {
+        background-color: black;
+        color: white;
+      }
+
+      &-text {
+        flex-grow: 1;
+        word-break: break-all;
+      }
+    }
+
+    &-create {
+      cursor: pointer;
+    }
+  }
+
+  &-main {
+    //border: 1px solid black;
+    border-radius: 0.25rem;
+    //padding: 1rem;
+    flex-grow: 1;
+    word-break: break-all;
+  }
+}
+
+.menu-bar {
+  button {
+    font-size: inherit;
+    font-family: inherit;
+    color: #000;
+    margin: 0.1rem;
+    border: 1px solid black;
+    border-radius: 0.3rem !important;
+    padding: 0.1rem 0.4rem;
+    background: white;
+    accent-color: black;
+  }
+
+  .is-active {
+    background: black;
+    color: white;
+  }
+}
+
+.ProseMirror {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  min-height: max-content;
+  background-color: #ffffff;
+}
