@@ -4,8 +4,6 @@
   min-height: 100%;
 
   &-side {
-    margin: 1rem;
-    padding: 1rem;
     min-height: 94vh;
     min-width: 25%;
     width: 25%;
@@ -44,6 +42,7 @@
     border-radius: 0.25rem;
     padding-top: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
     flex-grow: 1;
     word-break: break-all;
   }
