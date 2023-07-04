@@ -65,7 +65,6 @@ const NoteEditor = ({ noteID }: NoteEditorProps) => {
       <NoteTitle noteID={noteID} />
       <br />
       <MenuBar editor={editor} />
-
       <br />
       <EditorContent editor={editor} />
     </>
